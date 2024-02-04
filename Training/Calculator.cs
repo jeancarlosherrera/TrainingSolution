@@ -1,6 +1,6 @@
 namespace Training;
 
-public class Calculator
+internal class Calculator
 {
     private readonly int _firstDigit, _secondDigit;
     public Calculator(int firstDigit, int secondDigit)
@@ -12,5 +12,10 @@ public class Calculator
     public int Sum ()
     {
         return _firstDigit + _secondDigit;
+    }
+
+    public int Substract ()
+    {
+        return _firstDigit - _secondDigit;
     }
 }
